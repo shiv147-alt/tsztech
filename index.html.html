@@ -144,14 +144,21 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--slate-grey-dark);
+            height: 60px;
         }
 
-        .logo-text {
-            color: var(--primary-blue);
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-image {
+            display: block;
+            width: 150px;
+            height: auto;
+            max-height: 50px;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -714,8 +721,9 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <span class="logo-icon"></span>
-                    <span class="logo-text">tsztech</span>
+                    <a href="/" class="logo-link">
+                        <img src="Primary_Full_Blue_on_White.png" alt="TSZTech Logo" class="logo-image">
+                    </a>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
@@ -731,7 +739,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Secure Cloud. Intelligent Solutions. Limitless Possibilities</h1>
+                <h1>Secure Cloud. Intelligent Solutions. Limitless Possibilities. </h1>
                 <p class="hero-subtitle">Move, modernize, and protect your business with secure cloud infrastructure, reliable backup, disaster recovery, and business continuity solutions designed for performance, security, and long-term growth.
 
 Migrate. Protect. Recover. Scale.</p>
@@ -823,7 +831,6 @@ Migrate. Protect. Recover. Scale.</p>
                         <li>SharePoint file management</li>
                         <li>Advanced security & compliance</li>
                     </ul>
-                    <a href="#" class="card-link">Learn more →</a>
                 </div>
 
                 <div class="service-card">
@@ -836,7 +843,6 @@ Migrate. Protect. Recover. Scale.</p>
                         <li>Proven 6-phase methodology</li>
                         <li>24/7 migration support</li>
                     </ul>
-                    <a href="#" class="card-link">See our process →</a>
                 </div>
 
                 <div class="service-card">
@@ -849,7 +855,6 @@ Migrate. Protect. Recover. Scale.</p>
                         <li>Data loss prevention (DLP)</li>
                         <li>Compliance automation</li>
                     </ul>
-                    <a href="#" class="card-link">Secure your data →</a>
                 </div>
 
                 <div class="service-card">
@@ -862,7 +867,6 @@ Migrate. Protect. Recover. Scale.</p>
                         <li>Backup, disaster recovery &amp; business continuity</li>
                         <li>Secure networking, VPN &amp; hybrid connectivity</li>
                     </ul>
-                    <a href="#" class="card-link">Explore Azure Solutions →</a>
                 </div>
 
                 <div class="service-card">
@@ -875,7 +879,6 @@ Migrate. Protect. Recover. Scale.</p>
         <li>Automated content generation &amp; workflow optimization</li>
         <li>Enterprise data privacy &amp; secure AI deployment</li>
     </ul>
-    <a href="#" class="card-link">Explore AI Solutions →</a>
 </div>
 
 <!-- Service Card 3: Backup & Disaster Recovery Solutions -->
@@ -889,7 +892,6 @@ Migrate. Protect. Recover. Scale.</p>
         <li>Fast system restoration &amp; minimal RTO/RPO</li>
         <li>Multi-cloud &amp; hybrid infrastructure security</li>
     </ul>
-    <a href="#" class="card-link">Explore Backup Solutions →</a>
 </div>
             </div>
         </div>
@@ -1092,7 +1094,7 @@ Modernize. Protect. Scale.</p>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#assessment">Contact</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#services">Careers</a></li>
                     </ul>
                 </div>
 
